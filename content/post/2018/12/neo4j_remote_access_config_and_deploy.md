@@ -178,8 +178,8 @@ Password:neo4j
 ## 4、neo4j访问语句
 
 ```
-- 查询产品词相似关系：
-MATCH p=(n:PwNode{name:'口罩'})-[r:similar]->() RETURN p LIMIT 25
+- 查询关系：
+MATCH p=(n:Node{name:'手机'})-[]->() RETURN p LIMIT 25
 
 ```
 
